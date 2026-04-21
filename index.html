@@ -451,7 +451,7 @@
     var ctx=c.getContext('2d');ctx.fillStyle='#2c6da2';ctx.fillRect(0,0,sz,sz);
     var img=new Image();
     img.onload=function(){
-      var lhm=sz*0.52,lwm=sz*0.82,r=img.width/img.height,lh=lhm,lw=lh*r;
+      var lhm=sz*0.58,lwm=sz*0.82,r=img.width/img.height,lh=lhm,lw=lh*r;
       if(lw>lwm){lw=lwm;lh=lw/r;}
       var fs=Math.round(sz*0.13),g=sz*0.03,th=lh+g+fs,sy=(sz-th)/2;
       ctx.globalCompositeOperation='screen';ctx.drawImage(img,(sz-lw)/2,sy,lw,lh);
